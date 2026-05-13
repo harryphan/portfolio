@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -47,7 +48,7 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
         />
       </button>
 
-      {open && (
+      {open && createPortal(
         <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-sm flex flex-col items-center justify-center md:hidden">
           <nav className="flex flex-col items-center gap-8">
             {links.map(({ href, label }) => (
@@ -60,7 +61,8 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
               </Link>
             ))}
           </nav>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   )
