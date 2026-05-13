@@ -33,3 +33,20 @@ body {
     color: black;
   }
 }
+
+/* Hero focal point: face sits at ~20% horizontal in the 1800×1440 landscape source.
+   y% has no effect (no vertical overflow on portrait viewports). */
+.hero-image {
+  object-position: 20% 40%;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    object-position: 30% 40%;
+  }
+}
+
+/* Push fixed header content below Dynamic Island / notch on iOS.
+   Falls back to 0px on browsers that don't support env(). */
+.safe-header {
+  padding-top: env(safe-area-inset-top, 0px);
+}

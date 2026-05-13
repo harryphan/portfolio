@@ -18,7 +18,7 @@ export function SiteHeader() {
   const isHome = pathname === '/'
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 pt-[env(safe-area-inset-top)] transition-colors duration-500 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 safe-header transition-colors duration-500 ${
       isHome
         ? 'bg-transparent border-transparent'
         : 'bg-black/80 backdrop-blur-sm border-b border-white/10'

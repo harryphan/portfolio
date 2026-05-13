@@ -23,7 +23,7 @@ export function Hero() {
           alt="Harry Phan"
           fill
           priority
-          className="object-cover object-[50%_20%] md:object-[30%_40%]"
+          className="object-cover hero-image"
           sizes="100vw"
         />
       </motion.div>
