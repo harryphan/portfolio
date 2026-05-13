@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { MobileMenu } from './MobileMenu'
 
 const navLinks = [
@@ -11,6 +14,8 @@ const navLinks = [
 ]
 
 export function SiteHeader() {
+  const pathname = usePathname()
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -24,15 +29,21 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-          {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className="font-display text-[11px] tracking-[0.2em] uppercase text-gray-300 hover:text-white transition-colors duration-200"
-            >
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ href, label }) => {
+            const active = pathname === href
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={active ? 'page' : undefined}
+                className={`font-display text-[11px] tracking-[0.2em] uppercase transition-colors duration-200 ${
+                  active ? 'text-white' : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                {label}
+              </Link>
+            )
+          })}
         </nav>
 
         <MobileMenu links={navLinks} />

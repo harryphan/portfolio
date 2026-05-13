@@ -22,6 +22,7 @@ export default function MediaPage() {
               videoId={featured.id}
               platform={featured.platform as 'vimeo' | 'youtube'}
               title={featured.title}
+              poster={featured.poster}
             />
             <p className="font-display text-xs tracking-widest uppercase text-gray-500 mt-3">
               {featured.title}
@@ -41,6 +42,7 @@ export default function MediaPage() {
                     videoId={video.id}
                     platform={video.platform as 'vimeo' | 'youtube'}
                     title={video.title}
+                    poster={video.poster}
                   />
                   <p className="font-display text-xs tracking-widest uppercase text-gray-500 mt-3">
                     {video.title}

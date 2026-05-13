@@ -58,7 +58,7 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
       <div className="fixed inset-0 bg-black/95 flex items-center justify-center">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 text-white/60 hover:text-white transition-colors p-2"
+          className="absolute top-4 right-4 z-10 text-white/60 hover:text-white transition-colors p-3"
           aria-label="Close"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -68,7 +68,7 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
 
         <button
           onClick={onPrev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-3"
           aria-label="Previous image"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -78,7 +78,7 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
 
         <button
           onClick={onNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-3"
           aria-label="Next image"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">

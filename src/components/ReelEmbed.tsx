@@ -20,9 +20,7 @@ export function ReelEmbed({ videoId, platform, title, poster }: ReelEmbedProps) 
 
   const posterUrl =
     poster ||
-    (platform === 'youtube'
-      ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
-      : null)
+    (platform === 'youtube' ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null)
 
   return (
     <div className="relative w-full aspect-video bg-black rounded overflow-hidden">
@@ -50,6 +48,13 @@ export function ReelEmbed({ videoId, platform, title, poster }: ReelEmbedProps) 
             />
           )}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
+
+          {/* bottom gradient + always-visible title */}
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/70 to-transparent" />
+          <p className="absolute bottom-3 left-4 text-white text-sm font-display tracking-wider uppercase opacity-60 group-hover:opacity-100 transition-opacity">
+            {title}
+          </p>
+
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg
@@ -62,9 +67,6 @@ export function ReelEmbed({ videoId, platform, title, poster }: ReelEmbedProps) 
               </svg>
             </div>
           </div>
-          <p className="absolute bottom-4 left-4 text-white text-sm font-display tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">
-            {title}
-          </p>
         </button>
       )}
     </div>

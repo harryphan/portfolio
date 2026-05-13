@@ -8,8 +8,8 @@
     "heading": "Bio",
     "headshot": "/images/about/headshot.jpg",
     "bio": [
-      "Harry Phan is an Asian American Actor new to living in New York City. He started exploring acting classes in Boston to get over crippling stage fright during work presentations as a Software Engineer. After months of training, that fear turned into a passion for storytelling. In a decade’s long career, he booked roles in short films, plays, a spot for Dunkin Donuts, and eventually a role in a Netflix film, The Sleepover.",
-      "When he’s not acting, coding, or disappointing his parents, Harry can be found throwing axes, climbing in rock gyms, or working on his Olympic lifts, all to prepare for his future role as a professional assassin on Law & Order, Star Wars, and the MCU."
+      "Harry Phan is an Asian American Actor new to living in New York City. He started exploring acting classes in Boston to get over crippling stage fright during work presentations as a Software Engineer. After months of training, that fear turned into a passion for storytelling. In a decade's long career, he booked roles in short films, plays, a spot for Dunkin Donuts, and eventually a role in a Netflix film, The Sleepover.",
+      "When he's not acting, coding, or disappointing his parents, Harry can be found throwing axes, climbing in rock gyms, or working on his Olympic lifts, all to prepare for his future role as a professional assassin on Law & Order, Star Wars, and the MCU."
     ]
   },
   "contact": {
@@ -20,12 +20,43 @@
   },
   "media": {
     "videos": [
-      { "id": "843529616", "platform": "vimeo", "title": "Demo Reel", "featured": true },
-      { "id": "840885631", "platform": "vimeo", "title": "Demo Reel (Extended Cut)" },
-      { "id": "837768102", "platform": "vimeo", "title": "Clip — Professional Assassin" },
-      { "id": "991617365", "platform": "vimeo", "title": "Clip — Flirty CSI Tech" },
-      { "id": "1036494781", "platform": "vimeo", "title": "Clip — Post Apocalypse Survivor" },
-      { "id": "693801245", "platform": "vimeo", "title": "Clip — Sipping Spy" }
+      {
+        "id": "843529616",
+        "platform": "vimeo",
+        "title": "Demo Reel",
+        "featured": true,
+        "poster": "https://i.vimeocdn.com/video/1696904356-b7dcc17201e298306909a09a2e61dc728294619399be2c6ee7d3ae6e1b249227-d_1280?region=us"
+      },
+      {
+        "id": "840885631",
+        "platform": "vimeo",
+        "title": "Demo Reel (Extended Cut)",
+        "poster": "https://i.vimeocdn.com/video/1691079940-246373accec94b89bc9673de0685aac5b998de59d4f52f17d613386848b66276-d_1280?region=us"
+      },
+      {
+        "id": "837768102",
+        "platform": "vimeo",
+        "title": "Clip — Professional Assassin",
+        "poster": "https://i.vimeocdn.com/video/1686651660-e0f5bc7c904beb1e125348e7d6bbee8dc6be267a4412863bbcbbb9d18dcb9aed-d_1280?region=us"
+      },
+      {
+        "id": "991617365",
+        "platform": "vimeo",
+        "title": "Clip — Flirty CSI Tech",
+        "poster": "https://i.vimeocdn.com/video/1907474699-eb0b4e39abef8eae4a5781190ecd243cfe288892acc272e13c1b7a324cf930da-d_1280?region=us"
+      },
+      {
+        "id": "1036494781",
+        "platform": "vimeo",
+        "title": "Clip — Post Apocalypse Survivor",
+        "poster": "https://i.vimeocdn.com/video/1958224772-02340e9d62e1577424714bb2db2c9ec17a08248e96c91b8e2f4bf92025211751-d_1280?region=us"
+      },
+      {
+        "id": "693801245",
+        "platform": "vimeo",
+        "title": "Clip — Sipping Spy",
+        "poster": "https://i.vimeocdn.com/video/1403920853-a22ed1df0e7ddd973ca1260a5f3485bcc76074193c44baab5b7264d587059f90-d_1280?region=us"
+      }
     ]
   },
   "gallery": {
