@@ -32,7 +32,7 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="md:hidden flex flex-col gap-1.5 p-2 z-50 relative"
+        className="md:hidden flex flex-col gap-1.5 p-3 min-w-[44px] min-h-[44px] items-center justify-center z-50 relative"
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
       >

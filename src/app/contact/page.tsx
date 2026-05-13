@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { SocialIcons } from '@/components/SocialIcons'
 import content from '../../../data/content.json'
 
 export const metadata: Metadata = { title: 'Contact' }
@@ -54,9 +53,6 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-10">
-            <SocialIcons />
-          </div>
         </div>
       </div>
     </div>

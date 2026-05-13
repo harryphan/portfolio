@@ -19,7 +19,8 @@ export default function ResumePage() {
           </a>
         </div>
 
-        <div className="w-full aspect-[8.5/11] border border-white/10 bg-white">
+        {/* PDF embed — desktop/tablet only */}
+        <div className="hidden md:block w-full aspect-[8.5/11] border border-white/10 bg-white">
           <iframe
             src="/resume.pdf"
             title="Harry Phan Resume"
@@ -27,11 +28,19 @@ export default function ResumePage() {
           />
         </div>
 
-        <p className="text-center mt-6 text-xs text-gray-600 font-display tracking-widest uppercase">
-          <a href="/resume.pdf" download className="hover:text-gray-400 transition-colors">
+        {/* Mobile: download CTA only */}
+        <div className="md:hidden border border-white/10 flex flex-col items-center justify-center gap-6 py-24 px-6 text-center">
+          <p className="font-sans text-gray-400 text-sm leading-relaxed">
+            The full resume is available as a PDF.
+          </p>
+          <a
+            href="/resume.pdf"
+            download
+            className="font-display text-sm tracking-[0.2em] uppercase text-white border border-white/40 hover:border-white/80 px-8 py-3 transition-colors"
+          >
             Download Resume PDF
           </a>
-        </p>
+        </div>
       </div>
     </div>
   )

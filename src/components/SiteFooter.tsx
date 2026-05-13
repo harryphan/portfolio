@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 py-10 px-6 text-center">
       <SocialIcons className="justify-center mb-6" />
       <p className="text-xs text-gray-500 tracking-widest uppercase">
-        ©2024 by Harry Phan
+        ©{new Date().getFullYear()} by Harry Phan
       </p>
     </footer>
   )
