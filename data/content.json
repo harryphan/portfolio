@@ -1,0 +1,44 @@
+{
+  "home": {
+    "heroImage": "/images/hero/hero.jpg",
+    "h1": "Harry Phan",
+    "tagline": "SAG-AFTRA • NYC • BOS"
+  },
+  "about": {
+    "heading": "Bio",
+    "headshot": "/images/about/headshot.jpg",
+    "bio": [
+      "Harry Phan is an Asian American Actor new to living in New York City. He started exploring acting classes in Boston to get over crippling stage fright during work presentations as a Software Engineer. After months of training, that fear turned into a passion for storytelling. In a decade’s long career, he booked roles in short films, plays, a spot for Dunkin Donuts, and eventually a role in a Netflix film, The Sleepover.",
+      "When he’s not acting, coding, or disappointing his parents, Harry can be found throwing axes, climbing in rock gyms, or working on his Olympic lifts, all to prepare for his future role as a professional assassin on Law & Order, Star Wars, and the MCU."
+    ]
+  },
+  "contact": {
+    "heading": "Bookings",
+    "agency": "Lisa Lax Agency",
+    "phone": "646-648-0138",
+    "website": "https://www.lisalaxagency.com/"
+  },
+  "media": {
+    "videos": [
+      { "id": "843529616", "platform": "vimeo", "title": "Demo Reel", "featured": true },
+      { "id": "840885631", "platform": "vimeo", "title": "Demo Reel (Extended Cut)" },
+      { "id": "837768102", "platform": "vimeo", "title": "Clip — Professional Assassin" },
+      { "id": "991617365", "platform": "vimeo", "title": "Clip — Flirty CSI Tech" },
+      { "id": "1036494781", "platform": "vimeo", "title": "Clip — Post Apocalypse Survivor" },
+      { "id": "693801245", "platform": "vimeo", "title": "Clip — Sipping Spy" }
+    ]
+  },
+  "gallery": {
+    "images": [
+      { "src": "/images/headshots/headshot-1.jpg", "alt": "Harry Phan headshot" },
+      { "src": "/images/headshots/headshot-2.jpg", "alt": "Harry Phan editorial" },
+      { "src": "/images/headshots/headshot-3.jpg", "alt": "Harry Phan commercial headshot" },
+      { "src": "/images/headshots/headshot-4.jpg", "alt": "Harry Phan dramatic headshot" },
+      { "src": "/images/headshots/headshot-5.jpg", "alt": "Harry Phan lifestyle" },
+      { "src": "/images/headshots/headshot-6.jpg", "alt": "Harry Phan on set" }
+    ]
+  },
+  "resume": {
+    "pdfUrl": "/resume.pdf"
+  }
+}
