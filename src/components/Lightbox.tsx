@@ -106,7 +106,7 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
           )}
         </div>
 
-        <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-gray-500 font-display tracking-widest uppercase">
+        <p className="absolute top-5 left-5 text-xs text-gray-500 font-display tracking-widest uppercase">
           {index + 1} / {images.length}
         </p>
       </motion.div>

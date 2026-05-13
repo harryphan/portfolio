@@ -15,15 +15,16 @@ const navLinks = [
 
 export function SiteHeader() {
   const pathname = usePathname()
+  const isHome = pathname === '/'
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="group">
-          <span className="block font-display text-white text-xl tracking-[0.25em] uppercase leading-none">
+          <span className={`block font-display text-white text-xl tracking-[0.25em] uppercase leading-none transition-opacity duration-300 ${isHome ? 'opacity-0' : 'opacity-100'}`}>
             Harry Phan
           </span>
-          <span className="block font-serif italic text-gray-400 text-xs tracking-wide mt-0.5">
+          <span className={`block font-serif italic text-gray-400 text-xs tracking-wide mt-0.5 transition-opacity duration-300 ${isHome ? 'opacity-0' : 'opacity-100'}`}>
             SAG-AFTRA • NYC • BOS
           </span>
         </Link>

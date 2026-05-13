@@ -12,7 +12,7 @@ export default function MediaPage() {
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-5xl mx-auto px-6">
-        <h1 className="font-display text-xs tracking-[0.4em] uppercase text-gray-400 mb-16">
+        <h1 className="font-display text-sm tracking-[0.4em] uppercase text-gray-300 mb-16">
           Reel
         </h1>
 
@@ -32,7 +32,7 @@ export default function MediaPage() {
 
         {clips.length > 0 && (
           <>
-            <h2 className="font-display text-xs tracking-[0.3em] uppercase text-gray-400 mb-8 pb-2 border-b border-white/10">
+            <h2 className="font-display text-xs tracking-[0.3em] uppercase text-gray-500 mb-8 pb-2 border-b border-white/10">
               Clips
             </h2>
             <div className="grid md:grid-cols-2 gap-8">

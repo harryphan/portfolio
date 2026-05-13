@@ -7,7 +7,7 @@ export default function ResumePage() {
     <div className="pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex items-baseline justify-between mb-16">
-          <h1 className="font-display text-xs tracking-[0.4em] uppercase text-gray-400">
+          <h1 className="font-display text-sm tracking-[0.4em] uppercase text-gray-300">
             Resume
           </h1>
           <a

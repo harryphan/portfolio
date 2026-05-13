@@ -30,7 +30,7 @@ export function HeadshotGrid({ images }: HeadshotGridProps) {
 
   return (
     <>
-      <div className="columns-2 md:columns-3 gap-3 space-y-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {images.map((img, i) => (
           <button
             key={i}

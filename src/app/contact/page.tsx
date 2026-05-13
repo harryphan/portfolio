@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-3xl mx-auto px-6">
-        <h1 className="font-display text-xs tracking-[0.4em] uppercase text-gray-400 mb-16">
+        <h1 className="font-display text-sm tracking-[0.4em] uppercase text-gray-300 mb-16">
           Contact
         </h1>
 
