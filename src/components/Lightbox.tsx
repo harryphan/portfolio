@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 interface LightboxImage {
   src: string
@@ -55,7 +56,13 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
         touchStartX.current = null
       }}
     >
-      <div className="fixed inset-0 bg-black/95 flex items-center justify-center">
+      <motion.div
+        className="fixed inset-0 bg-black/95 flex items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 z-10 text-white/60 hover:text-white transition-colors p-3"
@@ -102,7 +109,7 @@ export function Lightbox({ images, index, onClose, onNext, onPrev }: LightboxPro
         <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-gray-500 font-display tracking-widest uppercase">
           {index + 1} / {images.length}
         </p>
-      </div>
+      </motion.div>
     </dialog>
   )
 }

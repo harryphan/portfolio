@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import Image from 'next/image'
+import { AnimatePresence } from 'framer-motion'
 import { Lightbox } from './Lightbox'
 
 export interface HeadshotImage {
@@ -42,7 +43,7 @@ export function HeadshotGrid({ images }: HeadshotGridProps) {
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
             </div>
@@ -50,15 +51,18 @@ export function HeadshotGrid({ images }: HeadshotGridProps) {
         ))}
       </div>
 
-      {lightboxIndex !== null && (
-        <Lightbox
-          images={images}
-          index={lightboxIndex}
-          onClose={closeLightbox}
-          onNext={next}
-          onPrev={prev}
-        />
-      )}
+      <AnimatePresence>
+        {lightboxIndex !== null && (
+          <Lightbox
+            key="lightbox"
+            images={images}
+            index={lightboxIndex}
+            onClose={closeLightbox}
+            onNext={next}
+            onPrev={prev}
+          />
+        )}
+      </AnimatePresence>
     </>
   )
 }
